@@ -1,5 +1,6 @@
 import { AuthContext } from '../../Auth';
 import { useContext } from 'react';
+import styles from './Home.module.css'
 
 function Home(){
     const { authenticated, logout } = useContext(AuthContext);
@@ -9,7 +10,7 @@ function Home(){
     return(
         <>
             <p>Home</p>
-            <button onClick={handleClick}>Sair</button>
+            <button className={styles.button} onClick={handleClick}>Sair</button>
         </>        
     )
 }

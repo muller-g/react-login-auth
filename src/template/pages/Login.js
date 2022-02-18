@@ -17,10 +17,10 @@ function Login(){
         .then(response => {
              if(response.data.jwt != "" && response.data.user.confirmed == true){
                 login(user, pass);
-             } else {
-                 alert("Erro ao logar")
-             }
-         })     
+             } 
+         }) .catch(error => 
+                alert("Usuário ou senha incorretos")
+            )    
     }
     const [user, setUser] = useState('');
     const [pass, setPass] = useState('');
