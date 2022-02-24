@@ -1,0 +1,9 @@
+.pagination{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+}
+
+.nb_space{
+    margin-right: 10px;
+}

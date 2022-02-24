@@ -7,11 +7,46 @@
     height: 100vh;
 }
 
-.container_form{
+
+form{
     width: 100%;
-    max-width: 900px;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.container img{
+    width: 200px;
+}
+
+.container form{
+    width: 100%;
+    max-width: 500px;
+}
+
+.form_container{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+    background-color: white;
+    padding: 40px 20px;
+}
+
+label{
+    color: #6e6e6e;
+    margin-top: 5px;
+}
+
+span{
+    position: absolute;
+    right: 10px;
+    bottom: 63px;
+    cursor: pointer;
+}
+
+.eyeImg{
+    width: 30px!important;
 }

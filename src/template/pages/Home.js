@@ -1,15 +1,19 @@
 import { AuthContext } from '../../Auth';
 import { useContext } from 'react';
 import styles from './Home.module.css'
+import Rhnews from '../components/Rhnews';
 
 function Home(){
-    const { authenticated, logout } = useContext(AuthContext);
+    const { logout } = useContext(AuthContext);
     function handleClick(){
         logout();
     }
     return(
         <>
-            <p>Home</p>
+            <h1>Home</h1>
+            <div className="container">
+                <Rhnews />
+            </div>
             <button className={styles.button} onClick={handleClick}>Sair</button>
         </>        
     )
